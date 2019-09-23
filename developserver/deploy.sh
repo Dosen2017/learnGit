@@ -5,6 +5,9 @@ kill -9 $(pgrep webserver)
 echo $? >> /tmp/err.txt
 
 cd ../
+
+rm -f webserver/webserver
+
 git pull https://github.com/Dosen2017/learnGit.git
 
 echo "\n" >> /tmp/err.txt
