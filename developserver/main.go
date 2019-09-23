@@ -17,7 +17,7 @@ func reLauch() {
 }
 
 func firstPage(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "<h1>hello, this is my first page!</h1>")
+	io.WriteString(w, "<h1>hello, this is my developserver!</h1>")
 	reLauch()
 }
 
