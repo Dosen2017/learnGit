@@ -2,25 +2,13 @@
 
 kill -9 $(pgrep webserver)
 
-echo $? >> /tmp/err.txt
-
 cd ../
-
-rm -f webserver/webserver
-
+rm -f webserver/webserver #这里删除是为了方便更新二进制文件webserver
 git pull https://github.com/Dosen2017/learnGit.git
-
-echo "\n" >> /tmp/err.txt
-echo $? >> /tmp/err.txt
-
 git checkout webserver/webserver --ours
 
-echo "\n" >> /tmp/err.txt
-echo $? >> /tmp/err.txt
+#git checkout webserver/webserver --ours  #更新二进制文件 , 没用到
 
-#git checkout webserver/webserver --ours  #更新二进制文件
 cd webserver
 chmod 777 webserver
 ./webserver &
-echo "\n" >> /tmp/err.txt
-echo $? >> /tmp/err.txt
