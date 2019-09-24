@@ -5,8 +5,16 @@ import (
 	"net/http"
 )
 
+func Print1to20() int {
+	res := 0
+	for i:=1; i<= 20; i++ {
+		res += i
+	}
+	return res
+}
+
 func firstPage(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "<h1>hello, this is my first page for gitgub2!</h1>")
+	io.WriteString(w, "<h1>hello, this is my first page for gitgub home!</h1>")
 }
 
 func main() {
