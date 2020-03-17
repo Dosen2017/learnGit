@@ -14,7 +14,7 @@ func Print1to20() int {
 }
 
 func firstPage(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "<h1>hello, this is my first page for gitgub 2020-03-18!</h1>")
+	io.WriteString(w, "<h2>hello, this is my first page for gitgub 2020-03-18 02:26!</h1>")
 }
 
 func main() {
